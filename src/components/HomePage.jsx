@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import './homepage.css';
+import { Link } from 'react-router-dom';
+import styles from './homepage.css';
 
 const HomePage = () => {
   // State to store the username
@@ -51,6 +52,7 @@ const HomePage = () => {
   }, []);
 
   return (
+    <div className = 'home-page'>
     <div className="main">
       <div className="dashboard">
         <h1>Dashboard</h1>
@@ -65,13 +67,15 @@ const HomePage = () => {
             </div>
           </li>
           <li key = "animals">
-            <div className="dashboard-item">
+            <Link to="/animals">
+            <div className="dashboard-item" >
               <img src="https://th.bing.com/th?id=OIP.0mZyqFbX5oC6d5L0bK7RdwHaHa&w=300&h=300&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" className="logo-image" />
               <h2>See our animals</h2>
               <div>
-                <p className="animals-text">Check out our animals!</p>
+                <p className="animals-text">Click here to check out our animals!</p>
               </div>
             </div>
+            </Link>
           </li>
           <li key="bookings">
             <div className="dashboard-item">
@@ -102,6 +106,7 @@ const HomePage = () => {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 }
