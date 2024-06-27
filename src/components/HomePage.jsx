@@ -56,6 +56,14 @@ const HomePage = () => {
     <div className="main">
       <div className="dashboard">
         <h1>Dashboard</h1>
+      <div className='register-login'>
+        <Link to="/login">
+          <button className="login-button">Login</button>
+        </Link>
+        <Link to="/register">
+          <button className="register-button">Register</button>
+        </Link>
+      </div>
         <ul className="dashboard-list row align-items-center justify-content-center">
           <li key="user">
             <div className="dashboard-item">

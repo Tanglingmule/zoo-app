@@ -5,6 +5,7 @@ import AnimalPage from './components/AnimalPage';
 import LoginPage from './components/LoginPage';
 import SignPage from './components/SignPage';
 import PageNotFound from './components/404Page';
+import BookingPage from './components/BookingPage';
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <Route path="/animals" element={<AnimalPage />}/>
         <Route path="/login" element={<LoginPage />}/>
         <Route path='/signup' element={<SignPage />}/>
+        <Route path="/booking" element={<BookingPage />}/>
+        {/* 404 Paths */}
         <Route path ='*' element={<PageNotFound />}/>
       </Routes>
     </Router>
