@@ -300,12 +300,23 @@
     padding: 10px;
   }
 
-  .register-login {
+  .login-button {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    border-radius: 10px;
+    border-radius: 50px;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    background-color: yellowgreen;
+
+  }
+
+  .register-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+    border-radius: 50px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    background-color: yellowgreen;
 
   }
 }

@@ -60,7 +60,7 @@ const HomePage = () => {
         <Link to="/login">
           <button className="login-button">Login</button>
         </Link>
-        <Link to="/register">
+        <Link to="/signup">
           <button className="register-button">Register</button>
         </Link>
       </div>
@@ -86,6 +86,7 @@ const HomePage = () => {
             </Link>
           </li>
           <li key="bookings">
+            <Link to="/booking">
             <div className="dashboard-item">
               <img src="https://th.bing.com/th?id=OIP.0mZyqFbX5oC6d5L0bK7RdwHaHa&w=300&h=300&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" className="logo-image" />
               <h2>Create a Booking</h2>
@@ -93,6 +94,7 @@ const HomePage = () => {
                 <p className="booking-text">Get a booking for the zoo now!</p>
               </div>
             </div>
+            </Link>
           </li>
           {/* Add more list items as needed */}
         </ul>
